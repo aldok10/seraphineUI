@@ -105,7 +105,7 @@ Combinations of atoms that form relatively simple UI components.
 ### Button Group
 **Requirement:** Contiguous buttons.
 **Plan:** Wrap buttons, removing inner borders and adjusting radii so only outer edges are 6px.
-- [ ] Task: Build `<ButtonGroup>` container.
+- [x] Task: Build `<ButtonGroup>` container.
 
 ### Input Group
 **Requirement:** Input with add-ons (icons/buttons).
