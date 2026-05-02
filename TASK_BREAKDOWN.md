@@ -31,7 +31,7 @@ Foundational, irreducible UI elements.
 ### Radio Group
 **Requirement:** Single-choice input set.
 **Plan:** Create accessible radio buttons.
-- [ ] Task: Build `<RadioGroup>` and `<RadioItem>` components.
+- [x] Task: Build `<RadioGroup>` and `<RadioItem>` components.
 
 ### Switch
 **Requirement:** Toggle input.
