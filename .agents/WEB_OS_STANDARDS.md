@@ -29,3 +29,18 @@ Welcome to the pristine frontend architecture! As an AI agent working in this re
 - **Always utilize Svelte actions for DOM manipulation:** Exclusively use Svelte `use:action` directives (e.g., `use:draggable`) to manage pointer events and bounding-box math outside of the standard reactivity cycle.
 - **Always apply physical hover/active states:** Exclusively implement active states that simulate tactile depth (e.g., translating an element's position `active:translate-y-[2px] active:translate-x-[2px]` and simultaneously removing the shadow `active:shadow-none`, giving the illusion of a physical button press).
 - **Always implement full interaction cycles:** Systematically render Loading (skeletal layouts matching the exact layout size), Empty (beautifully composed suggestions), and Error states (clear inline reporting).
+
+## 5. 🎯 Core Project Mission & Component Goals
+- **Always recognize the primary objective:** Your absolute, unwavering mission is to complete the construction of the massive 50+ item Neo-Brutalist Component Library.
+- **Always cross-reference the Component Inventory:** Before attempting to build any complex UI element, cross-reference the Master Inventory to ensure you aren't duplicating work, and strictly construct Molecules and Organisms using the pre-defined Atoms.
+
+### The Master Component Inventory
+
+**⚛️ Atoms (Foundational Elements)**
+- `Avatar`, `Badge`, `Button`, `Checkbox`, `Empty`, `Input`, `Item`, `Kbd`, `Label`, `Progress`, `Radio Group`, `Separator`, `Skeleton`, `Slider`, `Spinner`, `Switch`, `Textarea`, `Toggle`, `Typography`.
+
+**🧬 Molecules (Composite Elements)**
+- `Accordion`, `Alert`, `Aspect Ratio`, `Breadcrumb`, `Button Group`, `Card`, `Collapsible`, `Direction`, `Field`, `Hover Card`, `Input Group`, `Input OTP`, `Native Select`, `Pagination`, `Popover`, `Resizable`, `Scroll Area`, `Select`, `Tabs`, `Toast / Sonner`, `Toggle Group`, `Tooltip`.
+
+**🦠 Organisms (Complex / State-Driven Elements)**
+- `Alert Dialog`, `Calendar`, `Carousel`, `Chart`, `Combobox`, `Command`, `Context Menu`, `Data Table`, `Date Picker`, `Dialog`, `Drawer`, `Dropdown Menu`, `Menubar`, `Navigation Menu`, `Sheet`, `Sidebar`, `Table`.
