@@ -66,7 +66,7 @@ Foundational, irreducible UI elements.
 ### Empty
 **Requirement:** Empty state placeholder.
 **Plan:** Centered container for "no data" messages.
-- [ ] Task: Build `<Empty>` state component.
+- [x] Task: Build `<Empty>` state component.
 
 ### Direction
 **Requirement:** Layout direction provider.
