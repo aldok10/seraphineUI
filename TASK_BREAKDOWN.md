@@ -16,7 +16,7 @@ Foundational, irreducible UI elements.
 ### Badge
 **Requirement:** Small status indicators.
 **Plan:** Implement tiny inline blocks with 6px radius.
-- [ ] Task: Build `<Badge>` component for status labels.
+- [x] Task: Build `<Badge>` component for status labels.
 
 ### Avatar
 **Requirement:** User or entity representation.
