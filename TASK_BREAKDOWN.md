@@ -6,7 +6,7 @@ Foundational, irreducible UI elements.
 ### Typography
 **Requirement:** Consistent text styling matching the "Friendly Data-Dense" aesthetic.
 **Plan:** Implement a Typography component with variants for headers, paragraphs, and specialized metrics using `Matter` and `Matter Mono`.
-- [ ] Task: Build `<Typography>` with `Matter` for standard text and `Matter Mono` for metric props.
+- [x] Task: Build `<Typography>` with `Matter` for standard text and `Matter Mono` for metric props.
 
 ### Button
 **Requirement:** Primary interactive element with action and warning states.
@@ -21,7 +21,7 @@ Foundational, irreducible UI elements.
 ### Avatar
 **Requirement:** User or entity representation.
 **Plan:** Create an image/fallback container.
-- [ ] Task: Build `<Avatar>` component handling image loading and text fallbacks.
+- [x] Task: Build `<Avatar>` component handling image loading and text fallbacks.
 
 ### Checkbox
 **Requirement:** Boolean input.
@@ -66,7 +66,7 @@ Foundational, irreducible UI elements.
 ### Empty
 **Requirement:** Empty state placeholder.
 **Plan:** Centered container for "no data" messages.
-- [ ] Task: Build `<Empty>` state component.
+- [x] Task: Build `<Empty>` state component.
 
 ### Direction
 **Requirement:** Layout direction provider.
@@ -81,12 +81,12 @@ Foundational, irreducible UI elements.
 ### Input
 **Requirement:** Standard text input.
 **Plan:** Text field with 1px border, 6px radius, and `--accent` focus ring.
-- [ ] Task: Build `<Input>` component.
+- [x] Task: Build `<Input>` component.
 
 ### Textarea
 **Requirement:** Multiline text input.
 **Plan:** Textarea with 1px border, 6px radius.
-- [ ] Task: Build `<Textarea>` component.
+- [x] Task: Build `<Textarea>` component.
 
 ### Item
 **Requirement:** Generic list item.
@@ -105,7 +105,7 @@ Combinations of atoms that form relatively simple UI components.
 ### Button Group
 **Requirement:** Contiguous buttons.
 **Plan:** Wrap buttons, removing inner borders and adjusting radii so only outer edges are 6px.
-- [ ] Task: Build `<ButtonGroup>` container.
+- [x] Task: Build `<ButtonGroup>` container.
 
 ### Input Group
 **Requirement:** Input with add-ons (icons/buttons).
@@ -115,7 +115,7 @@ Combinations of atoms that form relatively simple UI components.
 ### Alert
 **Requirement:** Static inline message.
 **Plan:** 1px border box, 6px radius, no shadow. Colored based on intent (e.g., `--warning` for alerts).
-- [ ] Task: Build `<Alert>` component.
+- [x] Task: Build `<Alert>` component.
 
 ### Breadcrumb
 **Requirement:** Navigational path.
@@ -150,7 +150,7 @@ Combinations of atoms that form relatively simple UI components.
 ### Tabs
 **Requirement:** Tabbed content navigation.
 **Plan:** Tab list and tab panels. Active state indicated by `--accent` underline or background.
-- [ ] Task: Build `<Tabs>` component with Triggers and Content.
+- [x] Task: Build `<Tabs>` component with Triggers and Content.
 
 ### Toggle
 **Requirement:** Two-state button.
