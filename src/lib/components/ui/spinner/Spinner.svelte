@@ -2,8 +2,9 @@
 	import { cn } from '$lib/utils/cn.js';
 	import type { HTMLAttributes } from 'svelte/elements';
 
-	interface $$Props extends HTMLAttributes<SVGSVGElement> {
+	interface $$Props extends Omit<HTMLAttributes<SVGSVGElement>, 'class'> {
 		size?: 'sm' | 'md' | 'lg' | 'xl';
+		class?: string | undefined | null;
 	}
 
 	export let size: $$Props['size'] = 'md';
