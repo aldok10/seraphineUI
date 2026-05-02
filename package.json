@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "clsx": "^2.1.1",
+    "svelte": "^5.55.5",
+    "svelte-check": "^4.4.7",
+    "tailwind-merge": "^3.5.0",
+    "typescript": "^6.0.3"
+  }
+}
