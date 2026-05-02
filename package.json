@@ -1,0 +1,37 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "Welcome to **[Project Name]**, a highly complex, interactive Web OS frontend framework. This project isn't just another component library; it is a foundational architecture designed to bring a true desktop-like operating system experience directly into the browser. By combining the reactive power of Svelte with the blazing speed of Vite, we are building a platform capable of handling complex windowing, global state management, and dense data displays with uncompromising performance.",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aldok10/seraphineUI.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/aldok10/seraphineUI/issues"
+  },
+  "homepage": "https://github.com/aldok10/seraphineUI#readme",
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "puppeteer": "^24.42.0",
+    "tailwind-merge": "^3.5.0"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^7.0.0",
+    "@tailwindcss/postcss": "^4.2.4",
+    "@tailwindcss/vite": "^4.2.4",
+    "autoprefixer": "^10.5.0",
+    "postcss": "^8.5.13",
+    "svelte": "^5.55.5",
+    "tailwindcss": "^4.2.4",
+    "typescript": "^6.0.3",
+    "vite": "^8.0.10"
+  }
+}

@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@theme {
+  --color-os-bg: #C0C0C0;
+  --color-os-window: #FFFFFF;
+  --color-os-border: #000000;
+  --color-os-titlebar: #000080;
+  --color-os-accent: #FF3366;
+  --font-os: "Space Grotesk", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
