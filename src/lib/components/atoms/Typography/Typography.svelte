@@ -26,11 +26,11 @@
   }: Props = $props();
 
   const variantClasses: Record<TypographyVariant, string> = {
-    h1: 'text-4xl font-bold tracking-tight',
-    h2: 'text-3xl font-semibold tracking-tight',
-    h3: 'text-2xl font-semibold tracking-tight',
-    h4: 'text-xl font-semibold tracking-tight',
-    p: 'text-base leading-7',
+    h1: 'text-4xl font-bold tracking-tight lg:text-5xl font-["Matter"]',
+    h2: 'text-3xl font-semibold tracking-tight transition-colors first:mt-0 font-["Matter"]',
+    h3: 'text-2xl font-semibold tracking-tight font-["Matter"]',
+    h4: 'text-xl font-semibold tracking-tight font-["Matter"]',
+    p: 'leading-7 [&:not(:first-child)]:mt-6 font-["Matter"]',
     span: '',
     div: ''
   };
@@ -46,10 +46,10 @@
 <svelte:element
   this={as}
   class={cn(
-    "text-os-border font-os",
+    "text-os-border",
     variantClasses[variant || as],
     weight !== 'normal' && weightClasses[weight],
-    metric && "tabular-nums font-mono",
+    metric && "tabular-nums font-['Matter_Mono']",
     className
   )}
   {...rest}
