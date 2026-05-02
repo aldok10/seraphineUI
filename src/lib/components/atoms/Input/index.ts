@@ -1,1 +1,4 @@
-export { default as Input } from './Input.svelte';
+import Input from './Input.svelte';
+
+export { Input };
+export default Input;
