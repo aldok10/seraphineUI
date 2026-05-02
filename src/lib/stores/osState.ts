@@ -10,13 +10,24 @@ export type AppWindow = {
   y: number;
 };
 
+export type DesktopIcon = {
+  id: string;
+  label: string;
+  iconSrc: string;
+  targetAppId: string;
+};
+
 function createOSState() {
   const { subscribe, set, update } = writable<{
     windows: AppWindow[];
+    desktopIcons: DesktopIcon[];
     activeWindowId: string | null;
     highestZIndex: number;
   }>({
     windows: [],
+    desktopIcons: [
+      { id: 'settings', label: 'Settings', iconSrc: '/icons/settings.png', targetAppId: 'settings-app' }
+    ],
     activeWindowId: null,
     highestZIndex: 10,
   });
@@ -46,6 +57,11 @@ function createOSState() {
     closeWindow: (id: string) => update(state => ({
       ...state,
       windows: state.windows.map(w => w.id === id ? { ...w, isOpen: false } : w),
+      activeWindowId: state.activeWindowId === id ? null : state.activeWindowId
+    })),
+    minimizeWindow: (id: string) => update(state => ({
+      ...state,
+      windows: state.windows.map(w => w.id === id ? { ...w, isMinimized: true } : w),
       activeWindowId: state.activeWindowId === id ? null : state.activeWindowId
     })),
     focusWindow: (id: string) => update(state => {
