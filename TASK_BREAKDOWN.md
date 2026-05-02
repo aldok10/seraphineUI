@@ -41,7 +41,7 @@ Foundational, irreducible UI elements.
 ### Separator
 **Requirement:** Visual division.
 **Plan:** Simple 1px line using the `--border` color.
-- [ ] Task: Build `<Separator>` component (horizontal and vertical).
+- [x] Task: Build `<Separator>` component (horizontal and vertical).
 
 ### Spinner
 **Requirement:** Loading indicator.
