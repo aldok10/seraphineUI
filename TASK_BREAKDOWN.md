@@ -21,7 +21,7 @@ Foundational, irreducible UI elements.
 ### Avatar
 **Requirement:** User or entity representation.
 **Plan:** Create an image/fallback container.
-- [ ] Task: Build `<Avatar>` component handling image loading and text fallbacks.
+- [x] Task: Build `<Avatar>` component handling image loading and text fallbacks.
 
 ### Checkbox
 **Requirement:** Boolean input.
