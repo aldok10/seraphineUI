@@ -6,7 +6,7 @@ Foundational, irreducible UI elements.
 ### Typography
 **Requirement:** Consistent text styling matching the "Friendly Data-Dense" aesthetic.
 **Plan:** Implement a Typography component with variants for headers, paragraphs, and specialized metrics using `Matter` and `Matter Mono`.
-- [ ] Task: Build `<Typography>` with `Matter` for standard text and `Matter Mono` for metric props.
+- [x] Task: Build `<Typography>` with `Matter` for standard text and `Matter Mono` for metric props.
 
 ### Button
 **Requirement:** Primary interactive element with action and warning states.
@@ -16,7 +16,7 @@ Foundational, irreducible UI elements.
 ### Badge
 **Requirement:** Small status indicators.
 **Plan:** Implement tiny inline blocks with 6px radius.
-- [ ] Task: Build `<Badge>` component for status labels.
+- [x] Task: Build `<Badge>` component for status labels.
 
 ### Avatar
 **Requirement:** User or entity representation.
