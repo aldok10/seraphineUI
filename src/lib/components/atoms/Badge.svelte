@@ -26,7 +26,7 @@
 <div
 	class={cn(baseStyles, sizeStyles[size], variantStyles[variant], className)}
 	role="status"
-	aria-label="Badge"
+
 	{...$$restProps}
 >
 	<slot />
