@@ -51,7 +51,7 @@ Foundational, irreducible UI elements.
 ### Skeleton
 **Requirement:** Loading placeholder.
 **Plan:** Pulsing gray blocks with 6px radius.
-- [ ] Task: Build `<Skeleton>` component.
+- [x] Task: Build `<Skeleton>` component.
 
 ### Label
 **Requirement:** Input labels.
