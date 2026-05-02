@@ -135,7 +135,7 @@ Combinations of atoms that form relatively simple UI components.
 ### Tooltip
 **Requirement:** Tiny informational popover.
 **Plan:** Small black box with white `Matter` text, 6px radius.
-- [ ] Task: Build `<Tooltip>` component.
+- [x] Task: Build `<Tooltip>` component.
 
 ### Progress
 **Requirement:** Progress bar.
