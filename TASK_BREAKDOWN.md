@@ -1,6 +1,6 @@
-# Master Execution Blueprint: Web OS Task Breakdown 🚀
+# Master Execution Blueprint & Task Breakdown: Web OS Design System 🚀
 
-Welcome to the ultimate, hyper-granular roadmap for building our Neo-Brutalist Web OS. By breaking down this massive undertaking into atomic, highly verifiable steps, we ensure flawless execution without getting overwhelmed. Let's tackle this one tiny victory at a time!
+Welcome to the Master Execution Blueprint for our highly interactive, Neo-Brutalist Web OS frontend! This document translates our vast architectural vision into digestible, highly actionable Epics using a strict "Requirement -> Plan -> Task" hierarchy. By breaking down this massive undertaking into atomic, highly verifiable steps, we ensure flawless execution without getting overwhelmed.
 
 ## Epic 1: Repository Foundation & AI Rules 🛠️
 🎯 **Requirement:** Establish a robust base environment utilizing SvelteKit and Tailwind CSS, deeply integrating our Neo-Brutalist visual identity and strict AI-agent guidelines.
@@ -17,16 +17,16 @@ Welcome to the ultimate, hyper-granular roadmap for building our Neo-Brutalist W
 - [ ] 9. Create `src/app.css` and import Tailwind base, components, and utilities.
 - [ ] 10. Disable native body scrolling in `src/app.css` (`overflow: hidden`).
 - [ ] 11. Create `.agents/` directory in the repository root.
-- [ ] 12. Author `.agents/WEB_OS_STANDARDS.md`.
+- [ ] 12. Author `.agents/WEB_OS_STANDARDS.md` utilizing exclusively affirmative, whitelist-based commands (e.g., "Always apply solid black borders").
 - [ ] 13. Write the "Web OS Metaphor" rules (draggable windows, active context) into the standards file.
 - [ ] 14. Write the "Neo-Brutalist Visual Identity" rules (solid borders, stark contrasts) into the standards file.
 - [ ] 15. Write the "Typography & Symbology" rules into the standards file.
 - [ ] 16. Install `clsx` and `tailwind-merge` packages.
-- [ ] 17. Create `src/lib/utils/cn.ts` to combine class names safely.
+- [ ] 17. Create `src/lib/utils/cn.ts` (Tailwind Merge + clsx) utility for safe dynamic class management.
 
 ## Epic 2: Global State and Core Logic 🧠
 🎯 **Requirement:** Engineer the global state and DOM manipulation logic required to simulate a real desktop operating system natively in the browser.
-📐 **Plan:** Architect Svelte stores (`osState.ts`, `time.ts`, `fileSystem.ts`) to manage arrays of open windows and track system time, paired with custom Svelte actions (`use:draggable`, `use:resizable`) to handle pointer events.
+📐 **Plan:** Architect Svelte stores (`osState.ts`, `time.ts`, `fileSystem.ts`) to manage arrays of open windows, desktop icons, and track the `activeWindowId` (for z-index elevation), paired with custom Svelte actions (`use:draggable`, `use:resizable`) to handle pointer events.
 ✅ **Tasks:**
 - [ ] 18. Create `src/lib/stores/osState.ts`.
 - [ ] 19. Define the `AppWindow` TypeScript interface (id, title, isOpen, isMinimized, zIndex, x, y).
@@ -39,7 +39,7 @@ Welcome to the ultimate, hyper-granular roadmap for building our Neo-Brutalist W
 - [ ] 26. Implement `focusWindow` logic: increment `highestZIndex` and assign to the target window.
 - [ ] 27. Implement `updateWindowPosition` logic: update `x` and `y` coordinates for a specific window ID.
 - [ ] 28. Create `src/lib/stores/time.ts`.
-- [ ] 29. Implement a readable store that updates the current `Date` object every 60 seconds.
+- [ ] 29. Implement a readable store that updates the current `Date` object every 60 seconds to drive the taskbar time.
 - [ ] 30. Create `src/lib/stores/fileSystem.ts` for mock file directory state.
 - [ ] 31. Create `src/lib/actions/draggable.ts`.
 - [ ] 32. Implement `handlePointerDown` to initialize dragging offsets.
