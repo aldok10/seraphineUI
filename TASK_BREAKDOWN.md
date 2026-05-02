@@ -46,7 +46,7 @@ Foundational, irreducible UI elements.
 ### Spinner
 **Requirement:** Loading indicator.
 **Plan:** Animated SVG using `--accent` color.
-- [ ] Task: Build `<Spinner>` component.
+- [x] Task: Build `<Spinner>` component.
 
 ### Skeleton
 **Requirement:** Loading placeholder.
