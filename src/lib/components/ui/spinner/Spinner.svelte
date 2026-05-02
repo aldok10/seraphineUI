@@ -4,6 +4,7 @@
 
 	interface $$Props extends HTMLAttributes<SVGSVGElement> {
 		size?: 'sm' | 'md' | 'lg' | 'xl';
+		class?: string | undefined | null;
 	}
 
 	export let size: $$Props['size'] = 'md';

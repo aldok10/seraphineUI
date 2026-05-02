@@ -81,7 +81,7 @@ Foundational, irreducible UI elements.
 ### Input
 **Requirement:** Standard text input.
 **Plan:** Text field with 1px border, 6px radius, and `--accent` focus ring.
-- [ ] Task: Build `<Input>` component.
+- [x] Task: Build `<Input>` component.
 
 ### Textarea
 **Requirement:** Multiline text input.
