@@ -26,7 +26,7 @@ Foundational, irreducible UI elements.
 ### Checkbox
 **Requirement:** Boolean input.
 **Plan:** Style native checkbox using `--accent` color and 6px focus rings.
-- [ ] Task: Build `<Checkbox>` with custom SVG checkmarks.
+- [x] Task: Build `<Checkbox>` with custom SVG checkmarks.
 
 ### Radio Group
 **Requirement:** Single-choice input set.
