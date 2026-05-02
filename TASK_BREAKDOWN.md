@@ -6,7 +6,7 @@ Foundational, irreducible UI elements.
 ### Typography
 **Requirement:** Consistent text styling matching the "Friendly Data-Dense" aesthetic.
 **Plan:** Implement a Typography component with variants for headers, paragraphs, and specialized metrics using `Matter` and `Matter Mono`.
-- [ ] Task: Build `<Typography>` with `Matter` for standard text and `Matter Mono` for metric props.
+- [x] Task: Build `<Typography>` with `Matter` for standard text and `Matter Mono` for metric props.
 
 ### Button
 **Requirement:** Primary interactive element with action and warning states.
@@ -115,7 +115,7 @@ Combinations of atoms that form relatively simple UI components.
 ### Alert
 **Requirement:** Static inline message.
 **Plan:** 1px border box, 6px radius, no shadow. Colored based on intent (e.g., `--warning` for alerts).
-- [ ] Task: Build `<Alert>` component.
+- [x] Task: Build `<Alert>` component.
 
 ### Breadcrumb
 **Requirement:** Navigational path.
