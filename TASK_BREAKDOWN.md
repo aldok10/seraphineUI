@@ -200,7 +200,7 @@ Combinations of atoms that form relatively simple UI components.
 ### Dropdown Menu
 **Requirement:** Click-triggered menu.
 **Plan:** Menu list appearing below trigger, strictly utilizing z-100 scale.
-- [ ] Task: Build `<DropdownMenu>` component.
+- [x] Task: Build `<DropdownMenu>` component.
 
 ### Context Menu
 **Requirement:** Right-click menu.
