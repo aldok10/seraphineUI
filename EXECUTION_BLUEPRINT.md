@@ -1,14 +1,18 @@
-# Master Execution Blueprint & Task Breakdown: Web OS Design System 🚀
+# Master Execution Blueprint: Web OS Task Breakdown 🚀
 
-Welcome to the Master Execution Blueprint for our highly interactive, Neo-Brutalist Web OS frontend! This document translates our vast architectural vision into digestible, highly actionable Epics using a strict "Requirement -> Plan -> Task" hierarchy. By breaking down this massive undertaking into atomic, highly verifiable steps, we ensure flawless execution without getting overwhelmed.
+Welcome to the ultimate, hyper-granular roadmap for building our Neo-Brutalist Web OS. By breaking down this massive undertaking into atomic, highly verifiable steps, we ensure flawless execution without getting overwhelmed. Let's tackle this one tiny victory at a time!
 
 ## Epic 1: Repository Foundation & AI Rules 🛠️
 🎯 **Requirement:** Establish a robust base environment utilizing SvelteKit and Tailwind CSS, deeply integrating our Neo-Brutalist visual identity and strict AI-agent guidelines.
 📐 **Plan:** Scaffold the base SvelteKit project, configure Tailwind for brutalist typography and shadows, and formulate the `.agents` rules to govern the exact styling outputs.
 ✅ **Tasks:**
+
+**Environment Setup**
 - [ ] 1. Initialize a new SvelteKit project with Vite.
 - [ ] 2. Install Tailwind CSS, PostCSS, and Autoprefixer.
 - [ ] 3. Generate `tailwind.config.js` and `postcss.config.js`.
+
+**Tailwind Neo-Brutalist Config**
 - [ ] 4. Define `brutal-sm`, `brutal`, and `brutal-lg` solid box-shadows in `tailwind.config.js`.
 - [ ] 5. Define retro-tech color palette (`os.bg`, `os.window`, `os.border`, `os.titlebar`, `os.accent`) in `tailwind.config.js`.
 - [ ] 6. Import system monospace fonts (Space Grotesk, UI Monospace) into the global CSS.
@@ -16,8 +20,10 @@ Welcome to the Master Execution Blueprint for our highly interactive, Neo-Brutal
 - [ ] 8. Add custom OS cursor configurations (`cursor-os-default`, `cursor-os-pointer`) to Tailwind.
 - [ ] 9. Create `src/app.css` and import Tailwind base, components, and utilities.
 - [ ] 10. Disable native body scrolling in `src/app.css` (`overflow: hidden`).
+
+**AI Standards & Architecture**
 - [ ] 11. Create `.agents/` directory in the repository root.
-- [ ] 12. Author `.agents/WEB_OS_STANDARDS.md` utilizing exclusively affirmative, whitelist-based commands (e.g., "Always apply solid black borders").
+- [ ] 12. Author `.agents/WEB_OS_STANDARDS.md` utilizing exclusively affirmative, whitelist-based commands.
 - [ ] 13. Write the "Web OS Metaphor" rules (draggable windows, active context) into the standards file.
 - [ ] 14. Write the "Neo-Brutalist Visual Identity" rules (solid borders, stark contrasts) into the standards file.
 - [ ] 15. Write the "Typography & Symbology" rules into the standards file.
@@ -26,8 +32,10 @@ Welcome to the Master Execution Blueprint for our highly interactive, Neo-Brutal
 
 ## Epic 2: Global State and Core Logic 🧠
 🎯 **Requirement:** Engineer the global state and DOM manipulation logic required to simulate a real desktop operating system natively in the browser.
-📐 **Plan:** Architect Svelte stores (`osState.ts`, `time.ts`, `fileSystem.ts`) to manage arrays of open windows, desktop icons, and track the `activeWindowId` (for z-index elevation), paired with custom Svelte actions (`use:draggable`, `use:resizable`) to handle pointer events.
+📐 **Plan:** Architect Svelte stores (`osState.ts`, `time.ts`, `fileSystem.ts`) to manage arrays of open windows and track system time, paired with custom Svelte actions (`use:draggable`, `use:resizable`) to handle pointer events.
 ✅ **Tasks:**
+
+**Global OS State Management (`osState.ts`)**
 - [ ] 18. Create `src/lib/stores/osState.ts`.
 - [ ] 19. Define the `AppWindow` TypeScript interface (id, title, isOpen, isMinimized, zIndex, x, y).
 - [ ] 20. Define the `DesktopIcon` TypeScript interface (id, label, iconSrc, targetAppId).
@@ -38,9 +46,13 @@ Welcome to the Master Execution Blueprint for our highly interactive, Neo-Brutal
 - [ ] 25. Implement `minimizeWindow` logic: set `isMinimized` to true, clear `activeWindowId`.
 - [ ] 26. Implement `focusWindow` logic: increment `highestZIndex` and assign to the target window.
 - [ ] 27. Implement `updateWindowPosition` logic: update `x` and `y` coordinates for a specific window ID.
+
+**System Data Stores**
 - [ ] 28. Create `src/lib/stores/time.ts`.
-- [ ] 29. Implement a readable store that updates the current `Date` object every 60 seconds to drive the taskbar time.
+- [ ] 29. Implement a readable store that updates the current `Date` object every 60 seconds.
 - [ ] 30. Create `src/lib/stores/fileSystem.ts` for mock file directory state.
+
+**DOM Manipulation Actions (`use:action`)**
 - [ ] 31. Create `src/lib/actions/draggable.ts`.
 - [ ] 32. Implement `handlePointerDown` to initialize dragging offsets.
 - [ ] 33. Ensure `handlePointerDown` fires the `focusWindow` callback to bring the window to the front.
@@ -55,6 +67,8 @@ Welcome to the Master Execution Blueprint for our highly interactive, Neo-Brutal
 🎯 **Requirement:** Construct the visual primitives that compose the operating system interface, adhering strictly to the Neo-Brutalist style.
 📐 **Plan:** Break down the UI into Atoms (Buttons, Icons) and Molecules (Titlebars, Taskbar Items), ensuring all utilize the global `cn` utility for robust tailwind application.
 ✅ **Tasks:**
+
+**Atoms (Base UI)**
 - [ ] 40. Create `src/lib/components/atoms/Button.svelte`.
 - [ ] 41. Define `primary`, `secondary`, and `ghost` variants in `Button.svelte`.
 - [ ] 42. Implement tactile active states (`active:translate-y-[2px] active:translate-x-[2px] active:shadow-none`) for the button.
@@ -64,6 +78,8 @@ Welcome to the Master Execution Blueprint for our highly interactive, Neo-Brutal
 - [ ] 46. Create `src/lib/components/atoms/WindowControlBtn.svelte`.
 - [ ] 47. Style the close button variant (red hover state).
 - [ ] 48. Style the minimize button variant (gray hover state).
+
+**Molecules (Composite UI)**
 - [ ] 49. Create `src/lib/components/molecules/Titlebar.svelte`.
 - [ ] 50. Bind `use:draggable` strictly to the `.title-bar` element.
 - [ ] 51. Ensure child control buttons prevent event propagation (`stopPropagation`) to avoid dragging when clicked.
@@ -85,6 +101,8 @@ Welcome to the Master Execution Blueprint for our highly interactive, Neo-Brutal
 🎯 **Requirement:** Assemble the complex OS primitives into functional, state-driven interfaces.
 📐 **Plan:** Combine Titlebars and Content slots into the Window Frame, assemble the Taskbar, and build the Start Menu context panel.
 ✅ **Tasks:**
+
+**Window Frame & Stacking**
 - [ ] 65. Create `src/lib/components/organisms/WindowFrame.svelte`.
 - [ ] 66. Implement the `absolute` positioning logic bound to `x` and `y` from `osState.ts`.
 - [ ] 67. Bind the `z-index` dynamically to the `highestZIndex` value.
@@ -93,6 +111,8 @@ Welcome to the Master Execution Blueprint for our highly interactive, Neo-Brutal
 - [ ] 70. Apply `shadow-brutal-lg` conditionally when the window is focused.
 - [ ] 71. Apply a fallback `shadow-brutal` when the window is unfocused.
 - [ ] 72. Implement CSS transitions for minimizing (scale down/fade out to taskbar).
+
+**System Navigation (Taskbar & Start)**
 - [ ] 73. Create `src/lib/components/organisms/Taskbar.svelte`.
 - [ ] 74. Position the Taskbar fixed at the bottom of the viewport (`bottom-0 w-full`).
 - [ ] 75. Place `StartButton.svelte` on the far left.
@@ -104,6 +124,8 @@ Welcome to the Master Execution Blueprint for our highly interactive, Neo-Brutal
 - [ ] 81. Bind the StartMenu visibility to a local boolean toggled by the StartButton.
 - [ ] 82. Utilize `use:clickOutside` to close the StartMenu when clicking the desktop.
 - [ ] 83. Render a list of system applications within the StartMenu.
+
+**Desktop Canvas**
 - [ ] 84. Create `src/lib/components/organisms/Desktop.svelte`.
 - [ ] 85. Set the desktop container to fill the remaining viewport height (`h-[calc(100vh-40px)]`).
 - [ ] 86. Render an `#each` loop over `$osState.desktopIcons` to display `DesktopShortcut.svelte` instances.
@@ -114,11 +136,15 @@ Welcome to the Master Execution Blueprint for our highly interactive, Neo-Brutal
 🎯 **Requirement:** Assemble the entire desktop environment, construct mock applications, and configure automated deployment.
 📐 **Plan:** Wire the Organisms into the root `+page.svelte` layout, create functional mock apps (Settings, Browser) to validate the system, and set up CI/CD to Cloudflare Pages.
 ✅ **Tasks:**
+
+**Environment Assembly**
 - [ ] 89. Edit `src/routes/+page.svelte`.
 - [ ] 90. Wrap the entire page in an `overflow-hidden` container.
 - [ ] 91. Mount `Desktop.svelte` inside the page layout.
 - [ ] 92. Mount `Taskbar.svelte` fixed at the bottom of the layout.
 - [ ] 93. Create an `#each` loop rendering `WindowFrame.svelte` for every open window in `$osState`.
+
+**Mock Applications**
 - [ ] 94. Create `src/lib/apps/SettingsApp.svelte`.
 - [ ] 95. Build a layout within SettingsApp to toggle global themes or background colors.
 - [ ] 96. Create `src/lib/apps/BrowserApp.svelte`.
@@ -126,6 +152,8 @@ Welcome to the Master Execution Blueprint for our highly interactive, Neo-Brutal
 - [ ] 98. Create `src/lib/apps/TerminalApp.svelte`.
 - [ ] 99. Implement a read-only simulated command history for TerminalApp.
 - [ ] 100. Dynamically render the correct app component inside the `WindowFrame` `<slot />` based on the window's `targetAppId`.
+
+**QA and Deployment Pipeline**
 - [ ] 101. Test application on mobile viewports; verify windows collapse or stack gracefully if screen width `< 768px`.
 - [ ] 102. Set up GitHub repository and commit the base project.
 - [ ] 103. Create `.github/workflows/deploy.yml`.
