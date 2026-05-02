@@ -6,7 +6,7 @@ Foundational, irreducible UI elements.
 ### Typography
 **Requirement:** Consistent text styling matching the "Friendly Data-Dense" aesthetic.
 **Plan:** Implement a Typography component with variants for headers, paragraphs, and specialized metrics using `Matter` and `Matter Mono`.
-- [ ] Task: Build `<Typography>` with `Matter` for standard text and `Matter Mono` for metric props.
+- [x] Task: Build `<Typography>` with `Matter` for standard text and `Matter Mono` for metric props.
 
 ### Button
 **Requirement:** Primary interactive element with action and warning states.
