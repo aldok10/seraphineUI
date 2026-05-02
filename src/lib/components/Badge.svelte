@@ -5,19 +5,19 @@
 	let className: string | undefined | null = undefined;
 	export { className as class };
 
+	// Variant styles mapping
 	const variants = {
-		default: 'bg-os-bg text-black border-os-border',
-		accent: 'bg-os-accent text-white border-os-border',
-		warning: 'bg-yellow-400 text-black border-os-border',
-		outline: 'bg-transparent text-black border-os-border'
+		default: 'bg-gray-200 text-gray-800 border-transparent',
+		accent: 'bg-[var(--accent)] text-white border-transparent',
+		warning: 'bg-[var(--warning)] text-black border-transparent',
+		outline: 'bg-transparent text-gray-800 border-[var(--border)] border'
 	};
 </script>
 
 <div
 	class={cn(
-		'inline-flex items-center px-2.5 py-0.5 text-xs font-semibold transition-colors',
-		'rounded-[6px] border border-os-border',
-		'tabular-nums font-os',
+		'inline-flex items-center justify-center rounded-[6px] px-2.5 py-0.5 text-xs font-semibold transition-colors',
+		'border',
 		variants[variant],
 		className
 	)}

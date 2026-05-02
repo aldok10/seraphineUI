@@ -11,7 +11,7 @@ Foundational, irreducible UI elements.
 ### Button
 **Requirement:** Primary interactive element with action and warning states.
 **Plan:** Build a Button component with strict 6px radius, using `--accent` for primary and `--warning` for special actions. Use `clsx` and `twMerge`.
-- [ ] Task: Build `<Button>` with solid, outline, and ghost variants.
+- [x] Task: Build `<Button>` with solid, outline, and ghost variants.
 
 ### Badge
 **Requirement:** Small status indicators.
@@ -36,7 +36,7 @@ Foundational, irreducible UI elements.
 ### Switch
 **Requirement:** Toggle input.
 **Plan:** Create a pill-shaped toggle using `--accent` when active.
-- [ ] Task: Build `<Switch>` component for boolean toggles.
+- [x] Task: Build `<Switch>` component for boolean toggles.
 
 ### Separator
 **Requirement:** Visual division.
@@ -46,7 +46,7 @@ Foundational, irreducible UI elements.
 ### Spinner
 **Requirement:** Loading indicator.
 **Plan:** Animated SVG using `--accent` color.
-- [ ] Task: Build `<Spinner>` component.
+- [x] Task: Build `<Spinner>` component.
 
 ### Skeleton
 **Requirement:** Loading placeholder.
@@ -135,12 +135,12 @@ Combinations of atoms that form relatively simple UI components.
 ### Tooltip
 **Requirement:** Tiny informational popover.
 **Plan:** Small black box with white `Matter` text, 6px radius.
-- [ ] Task: Build `<Tooltip>` component.
+- [x] Task: Build `<Tooltip>` component.
 
 ### Progress
 **Requirement:** Progress bar.
 **Plan:** Track and indicator using `--accent`.
-- [ ] Task: Build `<Progress>` component.
+- [x] Task: Build `<Progress>` component.
 
 ### Slider
 **Requirement:** Range input.
