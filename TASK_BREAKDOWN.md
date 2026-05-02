@@ -6,7 +6,7 @@ Foundational, irreducible UI elements.
 ### Typography
 **Requirement:** Consistent text styling matching the "Friendly Data-Dense" aesthetic.
 **Plan:** Implement a Typography component with variants for headers, paragraphs, and specialized metrics using `Matter` and `Matter Mono`.
-- [ ] Task: Build `<Typography>` with `Matter` for standard text and `Matter Mono` for metric props.
+- [x] Task: Build `<Typography>` with `Matter` for standard text and `Matter Mono` for metric props.
 
 ### Button
 **Requirement:** Primary interactive element with action and warning states.
@@ -269,7 +269,7 @@ Complex, composite components forming major sections of the UI.
 ### Table
 **Requirement:** Standard HTML table.
 **Plan:** Styled `<table>` elements. Use `Matter Mono` for numeric columns.
-- [ ] Task: Build base `<Table>` components (Header, Row, Cell).
+- [x] Task: Build base `<Table>` components (Header, Row, Cell).
 
 ### Data Table
 **Requirement:** Complex table with sorting/filtering.
