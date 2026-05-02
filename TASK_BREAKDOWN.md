@@ -11,7 +11,7 @@ Foundational, irreducible UI elements.
 ### Button
 **Requirement:** Primary interactive element with action and warning states.
 **Plan:** Build a Button component with strict 6px radius, using `--accent` for primary and `--warning` for special actions. Use `clsx` and `twMerge`.
-- [ ] Task: Build `<Button>` with solid, outline, and ghost variants.
+- [x] Task: Build `<Button>` with solid, outline, and ghost variants.
 
 ### Badge
 **Requirement:** Small status indicators.
