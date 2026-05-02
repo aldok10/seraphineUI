@@ -140,7 +140,7 @@ Combinations of atoms that form relatively simple UI components.
 ### Progress
 **Requirement:** Progress bar.
 **Plan:** Track and indicator using `--accent`.
-- [ ] Task: Build `<Progress>` component.
+- [x] Task: Build `<Progress>` component.
 
 ### Slider
 **Requirement:** Range input.
