@@ -36,7 +36,7 @@ Foundational, irreducible UI elements.
 ### Switch
 **Requirement:** Toggle input.
 **Plan:** Create a pill-shaped toggle using `--accent` when active.
-- [ ] Task: Build `<Switch>` component for boolean toggles.
+- [x] Task: Build `<Switch>` component for boolean toggles.
 
 ### Separator
 **Requirement:** Visual division.
