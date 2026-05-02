@@ -150,7 +150,7 @@ Combinations of atoms that form relatively simple UI components.
 ### Tabs
 **Requirement:** Tabbed content navigation.
 **Plan:** Tab list and tab panels. Active state indicated by `--accent` underline or background.
-- [ ] Task: Build `<Tabs>` component with Triggers and Content.
+- [x] Task: Build `<Tabs>` component with Triggers and Content.
 
 ### Toggle
 **Requirement:** Two-state button.
