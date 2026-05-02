@@ -36,7 +36,7 @@ Foundational, irreducible UI elements.
 ### Switch
 **Requirement:** Toggle input.
 **Plan:** Create a pill-shaped toggle using `--accent` when active.
-- [ ] Task: Build `<Switch>` component for boolean toggles.
+- [x] Task: Build `<Switch>` component for boolean toggles.
 
 ### Separator
 **Requirement:** Visual division.
@@ -140,7 +140,7 @@ Combinations of atoms that form relatively simple UI components.
 ### Progress
 **Requirement:** Progress bar.
 **Plan:** Track and indicator using `--accent`.
-- [ ] Task: Build `<Progress>` component.
+- [x] Task: Build `<Progress>` component.
 
 ### Slider
 **Requirement:** Range input.
